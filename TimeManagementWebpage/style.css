@@ -43,10 +43,13 @@ hgroup {
 
 /* HEADER END */
 
-
+/* Medium Screen */
 @media (max-width: 992px) {
     #container {background-color: #000;}
 }
-@media (min-width: 768px) {
-    h2 {display: inline;}
+/* Small Screen */
+@media (max-width: 768px) {
+    h1, h2 {float: center;
+        display: inline;}
+    h1 {padding-right: 2em;}
 }
