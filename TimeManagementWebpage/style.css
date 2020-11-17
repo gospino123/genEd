@@ -48,8 +48,12 @@ hgroup {
     #container {background-color: #000;}
 }
 /* Small Screen */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
     h1, h2 {float: center;
         display: inline;}
     h1 {padding-right: 2em;}
+}
+/* XS Screen */
+@media (max-width: 480px) {
+    h2 {display: none;}
 }
