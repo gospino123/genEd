@@ -1,12 +1,52 @@
 /* GENERAL Styling */
-
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 body {
     font-family: Heebo, sans-serif;
+    font-size: 16px;
     background-color: #000;
     color: #fff;
+}
+.container {
+    margin: 15px 15px 0;
+}
+h1 {
+    padding-top: 5px;
+    font-size: 150%;
+    font-weight: 600;
+}
+h2 {
+    font-size: 120%;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.815);
+}
+header p {
+    font-size: 90%;
+    text-align: center;
+    width: 80%;
+    margin: .5em auto 0;
 }
 /* GENERAL Styling END */
 
 /* HEADER Start */
+header {
+    border: 2px solid rgb(34, 255, 45);
+    border-radius: 5px;
+    padding: 0 1em 1em;
+}
+hgroup {
+    text-align: center;
+}
 
 /* HEADER END */
+
+
+@media (max-width: 992px) {
+    #container {background-color: #000;}
+}
+@media (min-width: 768px) {
+    h2 {display: inline;}
+}
