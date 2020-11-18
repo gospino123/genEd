@@ -25,7 +25,7 @@ a:hover, a:active {
 }
 
 h3 {font-size: 120%; font-weight: 600;}
-h4 {font-size: 110%; font-weight: 500; font-style: italic; margin-top: .5em;}
+h4 {text-align: center; font-size: 110%; font-weight: 500; font-style: italic; margin-top: .5em;}
 
 /* GENERAL Styling END */
 
@@ -97,6 +97,12 @@ section.container {
     flex-basis: auto;
     /* flex-grow: ; */
 }
+/* Definition List Start */
+dt {
+    text-align: center;
+    font-style: italic;
+}
+/* Definition List End */
 
 #essentialism {order:3;}
 
@@ -112,6 +118,7 @@ aside li {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
 }
+dd li {list-style-type: none;}
 #todolists {order: 2;}
 /* BODY-CONTAINER-END */
 
