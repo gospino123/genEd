@@ -1,17 +1,31 @@
 /* GENERAL Styling */
 * {margin: 0px; padding: 0px; box-sizing: border-box;}
-
 body {
     font-family: Heebo, sans-serif;
     font-size: 18px;
     background-color: #000;
     color: #fff;
 }
+/* Time Management Active */
+#active {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border: 1px solid white; */
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+/* This is the correct order for a psuedo-classes */
+/* a {text-decoration: none;}
+a:link, a:visited {color: inherit;} */
+/* a:hover, a:active {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid white;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+} */
+
 /* GENERAL Styling END */
 
 /* HEADER Start */
-header {
-    margin-top: 45px;}
 hgroup {
     display: flex;
     margin: 0 1em;
@@ -20,16 +34,32 @@ header p {
     padding: 0 1em;
     font-weight: 300;
 }
-h1 {align-self: flex-start; font-size: 175%; text-align: left; text-shadow: 5px 5px rgba(255, 255, 255, 0.035); line-height: 34px; margin-top: 15px;}
-h2 {align-self: flex-end;  font-size: 120%; text-align: left; font-weight: 400; padding: 0 5px;}
+h1 {align-self: flex-start; font-size: 175%; text-align: left; line-height: 34px;}
+h2 {align-self: flex-end;  font-size: 120%; text-align: right; font-weight: 400; line-height: 24px;}
 header > p {
     line-height: 20px;
-    text-align: justify;
+    text-align: left;
     margin-top: 15px;
 }
+#headingContainer {
+    display: flex;
+    flex-direction: column;
+}
+.child1 {order: 1;}
+.child2 {order: 2;}
 /* HEADER END */
 
 /* NAV Start */
+nav {margin: 1em 1em 1em; border: .5px solid white; border-radius: 10px; box-shadow: 0px 0px 5px 1px whitesmoke;}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    padding-top: .5em;
+}
 i.time {
     display: inline-block;
     background: url(images/time.svg);
@@ -48,16 +78,30 @@ i.phys {
     width: 40px;
     height: 40px;
 }
-nav ul {
-    display: flex;
-    list-style-type: none;
-    top: 15px;
-}
-nav li {
-    flex-grow: 1;
-    text-align: center;
-}
 /* NAV END */
+
+/* BODY-CONTAINER-START */
+#bodyContainer {
+    margin: 1em 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+#essentialism {order:3;}
+#smartgoals {order:1;}
+#todolists {order: 2;}
+/* BODY-CONTAINER-END */
+
+/* FOOTER Start */
+footer > p {
+    text-align: center;
+    margin-top: .5em 1em 0;
+    color: lawngreen;
+}
+#copy {
+    font-weight: bolder;
+    font-style: italic;
+}
+/* FOOOTER END */
 
 /* XS  */
 @media (max-width: 768px) {
