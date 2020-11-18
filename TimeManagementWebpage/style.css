@@ -1,12 +1,71 @@
 /* GENERAL Styling */
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
 
 body {
     font-family: Heebo, sans-serif;
+    font-size: 18px;
     background-color: #000;
     color: #fff;
 }
 /* GENERAL Styling END */
 
 /* HEADER Start */
-
+header {
+    margin-top: 45px;}
+hgroup {
+    display: flex;
+}
+header p {
+    padding: 0 1em;
+}
+h1 {align-self: flex-start; font-size: 175%; text-align: center; text-shadow: 5px 5px rgba(255, 255, 255, 0.035); line-height: 34px; margin-top: 15px;}
+h2 {align-self: flex-end;  font-size: 120%; text-align: left; font-weight: 400; padding: 0 5px;}
+header > p {
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 15px;
+}
 /* HEADER END */
+
+/* NAV Start */
+i.time {
+    display: inline-block;
+    background: url(images/time.svg);
+    width: 40px;
+    height: 40px;
+}
+i.web {
+    display: inline-block;
+    background: url(images/web.svg);
+    width: 40px;
+    height: 40px;
+}
+i.phys {
+    display: inline-block;
+    background: url(images/phys.svg);
+    width: 40px;
+    height: 40px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    top: 15px;
+}
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+/* NAV END */
+
+/* XS  */
+@media (max-width: 768px) {
+    .xs {display: none;}
+}
+/* SM */
+@media (min-width: 769px) and (max-width: 992) {
+
+}
+/* MD+ */
+@media (min-width: 993px) {
+
+}
