@@ -14,11 +14,13 @@ header {
     margin-top: 45px;}
 hgroup {
     display: flex;
+    margin: 0 1em;
 }
 header p {
     padding: 0 1em;
+    font-weight: 300;
 }
-h1 {align-self: flex-start; font-size: 175%; text-align: center; text-shadow: 5px 5px rgba(255, 255, 255, 0.035); line-height: 34px; margin-top: 15px;}
+h1 {align-self: flex-start; font-size: 175%; text-align: left; text-shadow: 5px 5px rgba(255, 255, 255, 0.035); line-height: 34px; margin-top: 15px;}
 h2 {align-self: flex-end;  font-size: 120%; text-align: left; font-weight: 400; padding: 0 5px;}
 header > p {
     line-height: 20px;
