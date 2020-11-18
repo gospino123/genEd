@@ -3,7 +3,7 @@
 body {
     font-family: Heebo, sans-serif;
     font-size: 18px;
-    background-color: #000;
+    background: linear-gradient(150deg, #000,  rgb(0, 10, 20), #000, rgb(0, 10, 20),#000);
     color: #fff;
 }
 /* Time Management Active */
@@ -14,14 +14,18 @@ body {
     border-bottom-left-radius: 9px;
 }
 /* This is the correct order for a psuedo-classes */
-/* a {text-decoration: none;}
-a:link, a:visited {color: inherit;} */
-/* a:hover, a:active {
-    background-color: rgba(255, 255, 255, 0.7);
+a {text-decoration: none;}
+a:link, a:visited {color: inherit;}
+a:hover, a:active {
+    color: rgb(0, 125, 255);
+    /* background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid white;
     border-top-left-radius: 9px;
-    border-bottom-left-radius: 9px;
-} */
+    border-bottom-left-radius: 9px; */
+}
+
+h3 {font-size: 120%; font-weight: 600;}
+h4 {font-size: 110%; font-weight: 500; font-style: italic; margin-top: .5em;}
 
 /* GENERAL Styling END */
 
@@ -81,13 +85,33 @@ i.phys {
 /* NAV END */
 
 /* BODY-CONTAINER-START */
+.author {font-size: .9em; font-style: italic;}
 #bodyContainer {
     margin: 1em 1em 0;
     display: flex;
     flex-direction: column;
 }
+section.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    /* flex-grow: ; */
+}
+
 #essentialism {order:3;}
+
 #smartgoals {order:1;}
+cite h3 {text-align: center;}
+cite + p {text-align: center;}
+h4 + p {margin: .5em 0 .5em; line-height: 20px;}
+ul#lifeEvaluating {display:flex; list-style-type: none;}
+aside li {
+    font-size: .8em;
+    text-align: center;
+    flex-grow: 1; 
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
 #todolists {order: 2;}
 /* BODY-CONTAINER-END */
 
@@ -101,7 +125,7 @@ footer > p {
     font-weight: bolder;
     font-style: italic;
 }
-/* FOOOTER END */
+/* FOOTER END */
 
 /* XS  */
 @media (max-width: 768px) {
