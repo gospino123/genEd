@@ -135,8 +135,13 @@ aside li {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
 }
-
 #todolists {order: 2;}
+.v-imp {color:red;}
+.m-imp {color: yellow;}
+.b-conseq {color: red;}
+.nb-conseq {color: orange;}
+.n-imp {color: grey;}
+
 /* BODY-CONTAINER-END */
 
 /* FOOTER Start */
