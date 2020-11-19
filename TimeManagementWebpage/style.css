@@ -112,6 +112,7 @@ p > strong {text-transform: uppercase; }
 /* TIPS Start */
 .tip {
     margin-top: 5px;
+    font-size: .9em;
     border: 1px solid rgb(0, 125, 255);
     border-radius: 9px;
     background-color: rgba(0, 123, 255, 0.4);
