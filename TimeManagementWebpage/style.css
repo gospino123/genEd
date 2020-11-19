@@ -3,7 +3,7 @@
 body {
     font-family: Heebo, sans-serif;
     font-size: 18px;
-    background: linear-gradient(150deg, #000,  rgb(0, 10, 20), #000, rgb(0, 10, 20),#000);
+    background: linear-gradient(150deg, rgb(100,35,0),  rgb(0, 40, 80), #000, #000, #000,  rgb(0, 20, 40));
     color: #fff;
 }
 /* Time Management Active */
@@ -24,7 +24,7 @@ a:hover, a:active {
     border-bottom-left-radius: 9px; */
 }
 
-h3 {font-size: 120%; font-weight: 600;}
+h3 {font-size: 120%; font-weight: 600; text-align: center; margin-top: 1em;}
 h4 {text-align: center; font-size: 110%; font-weight: 500; font-style: italic; margin-top: .5em;}
 
 /* GENERAL Styling END */
@@ -35,7 +35,7 @@ hgroup {
     margin: 0 1em;
 }
 header p {
-    padding: 0 1em;
+    padding: 0 1em 1em;
     font-weight: 300;
 }
 h1 {align-self: flex-start; font-size: 175%; text-align: left; line-height: 34px;}
@@ -51,6 +51,7 @@ header > p {
 }
 .child1 {order: 1;}
 .child2 {order: 2;}
+div > hr {margin-bottom: -1em;}
 /* HEADER END */
 
 /* NAV Start */
