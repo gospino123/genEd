@@ -101,14 +101,29 @@ section.container {
 dt {
     text-align: center;
     font-style: italic;
+    margin-top: 10px;
 }
+dd li {list-style-type: none; padding-left: 1em; color: rgb(0, 125, 255);}
+.smart {font-weight: 900;}
+p > strong {text-transform: uppercase; }
 /* Definition List End */
+
+/* TIPS Start */
+.tip {
+    margin-top: 5px;
+    border: 1px solid rgb(0, 125, 255);
+    border-radius: 9px;
+    background-color: rgba(0, 123, 255, 0.4);
+    padding: 0 5px;
+    text-align: justify;
+    word-spacing: -2px;
+}
+/* TIPS END */
 
 #essentialism {order:3;}
 
 #smartgoals {order:1;}
-cite h3 {text-align: center;}
-cite + p {text-align: center;}
+cite h3, cite + p {text-align: center;}
 h4 + p {margin: .5em 0 .5em; line-height: 20px;}
 ul#lifeEvaluating {display:flex; list-style-type: none;}
 aside li {
@@ -118,7 +133,7 @@ aside li {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.15);
 }
-dd li {list-style-type: none;}
+
 #todolists {order: 2;}
 /* BODY-CONTAINER-END */
 
