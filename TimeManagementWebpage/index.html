@@ -130,16 +130,17 @@
             <h3>To-Do Lists</h3>
             <p>Every day you should have about <em>30 things</em> on your list labeled by level of importance.</p>
             <aside id="4TierTable">
-                <table border="1">
+                <table> <!-- border="1" -->
                     <caption>Urgency &amp; Importance</caption>
                     <!-- <colgroup></colgroup> Not necessary for this table (can be changed in CSS) -->
-                    <tfoot>If it's not important or urgent, Eliminate it</tfoot>
-                    <tbody>
+                    <thead>
                         <tr>
-                            <td></td>
-                            <td>Urgent</td>
-                            <td>Not Urgent</td>
+                            <th></th>
+                            <th>Urgent</th>
+                            <th>Not Urgent</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>Important</td>
                             <td></td>
@@ -151,7 +152,11 @@
                             <td></td>
                         </tr>
                     </tbody>
-                </table>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">If it's not important or urgent, Eliminate it</td>
+                        </tr>
+                    </tfoot>
             </aside>
             <dl>
                 <dt>A</dt>

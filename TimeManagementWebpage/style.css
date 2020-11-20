@@ -3,7 +3,8 @@
 body {
     font-family: Heebo, sans-serif;
     font-size: 18px;
-    background: linear-gradient(150deg, rgb(100,35,0),  rgb(0, 40, 80), #000, #000, #000,  rgb(0, 20, 40));
+    background: linear-gradient(150deg, rgb(100,35,0),  rgb(0, 40, 80), #000, #000, #000, rgb(0,40,80),
+     rgb(0, 20, 40));
     color: #fff;
 }
 /* Time Management Active */
@@ -13,6 +14,8 @@ body {
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
 }
+/* Time Management Active END */
+
 /* This is the correct order for a psuedo-classes */
 a {text-decoration: none;}
 a:link, a:visited {color: inherit;}
@@ -85,6 +88,8 @@ i.phys {
 }
 /* NAV END */
 
+
+
 /* BODY-CONTAINER-START */
 .author {font-size: .9em; font-style: italic;}
 #bodyContainer {
@@ -95,7 +100,7 @@ i.phys {
 section.container {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
+    flex-basis: 100%;
     /* flex-grow: ; */
 }
 /* Definition List Start */
@@ -127,7 +132,9 @@ p > strong {text-transform: uppercase; }
 #smartgoals {order:1;}
 cite h3, cite + p {text-align: center;}
 h4 + p {margin: .5em 0 .5em; line-height: 20px;}
-ul#lifeEvaluating {display:flex; list-style-type: none;}
+ul#lifeEvaluating {
+    display:flex; 
+    list-style-type: none;}
 aside li {
     font-size: .8em;
     text-align: center;
@@ -141,6 +148,19 @@ aside li {
 .b-conseq {color: red;}
 .nb-conseq {color: orange;}
 .n-imp {color: grey;}
+
+/* TABLE Start */
+table caption {font-weight: 900;}
+tr > td:first-child {font-weight: 600; font-size: 14px;}
+table tr {font-weight: 600; font-size: 14px;}
+tfoot {
+    display: table-footer-group;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+/* TABLE END */
+
+/* #practiceTable {border: 2px solid red;} */
 
 /* BODY-CONTAINER-END */
 
