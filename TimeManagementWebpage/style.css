@@ -133,8 +133,12 @@ p > strong {text-transform: uppercase; }
 /* TIPS END */
 
 #essentialism {order:3;}
-
-
+/* #goalEvaluating {
+    display: flex;
+} */
+#goalEvaluating li {
+    list-style-type: none;
+}
 
 #smartgoals {order:1;}
 cite h3, cite + p {text-align: center;}
