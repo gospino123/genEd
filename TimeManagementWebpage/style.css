@@ -134,6 +134,8 @@ p > strong {text-transform: uppercase; }
 
 #essentialism {order:3;}
 
+
+
 #smartgoals {order:1;}
 cite h3, cite + p {text-align: center;}
 h4 + p {margin: .5em 0 .5em; line-height: 20px;}
@@ -155,6 +157,7 @@ aside li {
 .nb-conseq {color: orange;}
 .n-imp {color: grey;}
 
+table {width: 100%;}
 table > caption {
     text-transform: uppercase;
     font-weight: 700;
@@ -164,7 +167,11 @@ tr > td {
     font-size: 14px;
     text-align: center;
 }
-
+#todolists dt {
+    text-align: left;
+    background: linear-gradient(90deg, rgba(0,0,255, 0.65), rgba(0, 25, 200, .52),  rgba(0, 0, 0, 0.897));
+    padding-left: 5px;
+}
 /* BODY-CONTAINER-END */
 
 /* FOOTER Start */
