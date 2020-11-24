@@ -99,6 +99,12 @@ section.container {
     /* flex-grow: ; */
 }
 /* Definition List Start */
+dl {
+    margin-bottom: 1em;
+}
+dl + p {
+    margin-bottom: 1em;
+}
 dt {
     text-align: center;
     font-style: italic;
@@ -120,6 +126,10 @@ p > strong {text-transform: uppercase; }
     text-align: justify;
     word-spacing: -2px;
 }
+.tip + p {
+    font-size: 14px;
+    text-align: center;
+}
 /* TIPS END */
 
 #essentialism {order:3;}
@@ -136,11 +146,24 @@ aside li {
     background-color: rgba(255, 255, 255, 0.15);
 }
 #todolists {order: 2;}
+#todolists > p {
+    text-align: center;
+}
 .v-imp {color:red;}
 .m-imp {color: yellow;}
 .b-conseq {color: red;}
 .nb-conseq {color: orange;}
 .n-imp {color: grey;}
+
+table > caption {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1em;
+}
+tr > td {
+    font-size: 14px;
+    text-align: center;
+}
 
 /* BODY-CONTAINER-END */
 
